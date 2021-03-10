@@ -1,7 +1,7 @@
 <header>
   <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm samazon-header-container">
     <%= link_to root_path do %>
-    <%= image_tag "/images/logo.jpg" %>
+    <%= image_tag "/images/logo3.jpg" %>
     <% end %>
     <form class="form-inline">
       <div class="form-group">
@@ -23,6 +23,16 @@
         <li class="nav-item mr-5">
           <%= link_to mypage_users_path, class: "nav-link" do %>
             <i class="fas fa-user mr-1"></i><label>マイページ</label>
+          <% end %>
+        </li>
+        <li class="nav-item mr-5">
+          <%= link_to mypage_favorite_users_path, class: "nav-link" do %>
+            <i class="far fa-heart"></i>
+          <% end %>
+        </li>
+        <li class="nav-item mr-5">
+          <%= link_to cart_users_path, class: "nav-link" do %>
+            <i class="fas fa-shopping-cart"></i>
           <% end %>
         </li>
       <% else%>    
