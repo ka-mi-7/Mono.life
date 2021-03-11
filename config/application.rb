@@ -23,8 +23,7 @@ module MonoLife
     # the framework and any gems in your application.
     config.generators do |g|
       g.javascripts false
-      g.helper false
-      g.test_framework false
+    
     end    
     
     # バリデーションエラーが発生したときに'field_with_errors'というclassを付加しない
